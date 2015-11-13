@@ -2,13 +2,14 @@ package com.fc.linkedlist;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 /**
- * Created by tislam on 11/8/15.
+ * Created by tislam on 11/12/15.
  */
-public class SinglyLinkedListTest {
+public class StackTest {
 
     @Before
     public void setUp() throws Exception {
@@ -17,6 +18,16 @@ public class SinglyLinkedListTest {
 
     @After
     public void tearDown() throws Exception {
+
+    }
+
+    @Test
+    public void testPush() throws Exception {
+
+    }
+
+    @Test
+    public void testPop() throws Exception {
 
     }
 }
