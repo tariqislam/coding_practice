@@ -247,6 +247,16 @@ public class Main {
     }
 
 
+    /**
+     * Questions:
+     * 1. Given a binary search tree, and an integer m, find the integer that has the smallest |distance| from m.
+     * 2. Longest common subsequence.
+     * 3. Implement LRU cache.
+     */
+
+
+
+
 
 }
 
