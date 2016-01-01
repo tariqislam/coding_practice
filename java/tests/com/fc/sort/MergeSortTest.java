@@ -25,19 +25,16 @@ public class MergeSortTest {
     @Test
     public void testSort() throws Exception {
         MergeSort ms = new MergeSort(this.unsortedArray);
-        ms.sort();
-        assertArrayEquals(this.sortedArray, ms.getArray());
+        assertArrayEquals(this.sortedArray, ms.sort());
 
         int[] singleArray = {100};
         ms = new MergeSort(singleArray);
-        ms.sort();
-        assertArrayEquals(singleArray, ms.getArray());
+        assertArrayEquals(singleArray, ms.sort());
 
         int[] twoArray = {2, 1};
         int[] expectedTwoArray = {1, 2};
         ms = new MergeSort(twoArray);
-        ms.sort();
-        assertArrayEquals(expectedTwoArray, ms.getArray());
+        assertArrayEquals(expectedTwoArray, ms.sort());
     }
 
     @Test(expected=NullPointerException.class)

@@ -3,7 +3,7 @@ package com.fc.sort;
 /**
  * Created by tislam on 12/30/15.
  */
-public class InsertionSort {
+public class InsertionSort extends Sort {
     private int[] array;
 
     public InsertionSort(int[] array) {

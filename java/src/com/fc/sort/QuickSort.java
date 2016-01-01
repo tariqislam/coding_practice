@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by tislam on 12/29/15.
  */
-public class QuickSort {
+public class QuickSort extends Sort {
 
     protected int[] array;
     Random random;

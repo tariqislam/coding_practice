@@ -4,7 +4,7 @@ import com.fc.heap.Heap;
 /**
  * Created by tislam on 12/27/15.
  */
-public class HeapSort {
+public class HeapSort extends Sort {
     private Heap heap;
 
     public HeapSort(int[] array) {

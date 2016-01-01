@@ -3,7 +3,7 @@ package com.fc.sort;
 /**
  * Created by tislam on 12/23/15.
  */
-public class MergeSort {
+public class MergeSort extends Sort {
 
     private int[] array;
 
@@ -15,15 +15,15 @@ public class MergeSort {
         return this.array;
     }
 
-    public void sort() {
+    public int[] sort() {
         if (this.array == null) {
             throw new NullPointerException("Array is null.");
         }
         else if (array.length == 0) {
             throw new ArrayIndexOutOfBoundsException("Cannot sort an empty array.");
         }
-
         this.mergeSort(0, array.length - 1);
+        return this.array;
     }
 
     private void mergeSort(int start, int end) {
