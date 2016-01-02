@@ -1,0 +1,8 @@
+Strategy pattern:
+This defines a family of algorithms, encapsulating them, and making them interchangeable (at runtime).
+It allows the client who uses the algorithm to vary from the algorithm itself.
+
+Method:
+Separate the code that changes from the code that remains the same.
+Create an interface for that code/behavior/algorithm.
+From your objects that have that behavior, program to the interface and not the concrete class/method.

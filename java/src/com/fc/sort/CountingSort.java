@@ -19,10 +19,11 @@ public class CountingSort extends Sort {
 
         max = this.findMaxIntegerInArray(this.array);
 
-        return this.countingSort(max);
+        this.countingSort(max);
+        return this.array;
     }
 
-    private int[] countingSort(int maxInteger) {
+    private void countingSort(int maxInteger) {
         int[] B = new int[this.array.length];
         int[] C = new int[maxInteger + 1]; // extra for 0
         int i;
@@ -44,7 +45,7 @@ public class CountingSort extends Sort {
             C[this.array[i]]--;
         }
 
-        return B;
+        this.array = B;
     }
 
 }

@@ -1,0 +1,13 @@
+Strategy pattern:
+This defines a family of algorithms, encapsulating them, and making them interchangeable (at runtime).
+It allows the client who uses the algorithm to vary from the algorithm itself.
+
+Method:
+Separate the code that changes from the code that remains the same.
+Create an interface for that code/behavior/algorithm.
+From your objects that have that behavior, program to the interface and not the concrete class/method.
+
+Design principles:
+1. Identify aspects of application that vary, then separate them from ones that stay the same.
+2. Program to an interface, not an implementation.
+3. Favor composition over inheritance.

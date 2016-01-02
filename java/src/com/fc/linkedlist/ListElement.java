@@ -60,4 +60,20 @@ public class ListElement {
         return head;
     }
 
+    public boolean hasNext() {
+        boolean hasNext = false;
+        if (this.next != null) {
+            hasNext = true;
+        }
+        return hasNext;
+    }
+
+    public ListElement next() {
+        return this.next;
+    }
+
+    public Object getData() {
+        return this.data;
+    }
+
 }

@@ -10,6 +10,14 @@ public class InsertionSort extends Sort {
         this.array = array;
     }
 
+    public InsertionSort(Integer[] array) {
+        int i;
+        this.array = new int[array.length];
+        for (i=0; i<array.length; i++) {
+            this.array[i] = array[i].intValue();
+        }
+    }
+
     public int[] sort() {
         int i, j, key;
 

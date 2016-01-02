@@ -47,6 +47,7 @@ public abstract class Sort {
             if (max < tempMax) {
                 max = tempMax;
             }
+            i += 2;
         }
 
         minMax[0] = min;
