@@ -1,0 +1,16 @@
+Observer pattern:
+Publishers (SUBJECT) + Subscribers (OBSERVERS)
+This pattern defines 1-M relationship between a SUBJECT (observable) and its OBSERVERS. When the subject's state changes, it notifies all the observers.
+
+Pull vs push:
+State can either be passed wit hthe notification (PUSH) or it can be obtained by the observers from the subject using getters after notification (PULL).
+Advantage of pull: only the state that observer cares about can be obtained.
+
+Method:
+- Create an Interface Observable, with registerObserver(), deleteObserver(), and notifyObserver() methods.
+- Create an Interface Observer, with update() method.
+- Alternatively, extend Java's Observable class, and implement the Observer Interface.
+
+Design principles:
+4. Strive for loose coupled designs between objects that interact.
+  - Looosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
