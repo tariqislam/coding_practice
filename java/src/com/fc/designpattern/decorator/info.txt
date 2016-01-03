@@ -1,0 +1,11 @@
+Decorator pattern:
+Allows one to attach additional functionality to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Method:
+- Create an interface for the component. Create concrete components.
+- Create an interface for the decorator, that extends the component's interface. In this way, both concrete components and concrete decorators are of the same supertype.
+- In the concrete decorators, the constructor should take in the concrete component, so that the decorator "wraps" the component.
+- Any method that needs to be extended in the concrete decorator, should probably first/in the end call the super's (wrapped concrete component) method.
+
+Design principles:
+5. Classes should be open for extension, but closed for modification.
